@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Jun 26 09:28:16 2020
+# Process ID: 9104
+# Log file: C:/Users/windows10/Desktop/vivadoWorks/Project_III/vivado.log
+# Journal file: C:/Users/windows10/Desktop/vivadoWorks/Project_III\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/windows10/Desktop/vivadoWorks/Project_III/Project_III.xpr
+create_project Mems C:/Users/windows10/Desktop/vivadoWorks/Mems -part xc7a100tcsg324-3
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.2 -module_name instruction_rom
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Enable_32bit_Address {true} CONFIG.Write_Depth_A {256} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/windows10/Documents/Tencent Files/2937572301/FileRecv/2018级实验/实验3/coe/mipstest.coe} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Use_RSTA_Pin {true} CONFIG.Port_A_Write_Rate {0}] [get_ips instruction_rom]
+generate_target {instantiation_template} [get_files c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/instruction_rom/instruction_rom.xci]
+generate_target all [get_files  c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/instruction_rom/instruction_rom.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/instruction_rom/instruction_rom.xci]
+launch_run -jobs 4 instruction_rom_synth_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.2 -module_name data_ram
+set_property -dict [list CONFIG.Enable_32bit_Address {true} CONFIG.Write_Depth_A {32768} CONFIG.Use_Byte_Write_Enable {true} CONFIG.Byte_Size {8} CONFIG.Write_Width_A {32} CONFIG.Read_Width_A {32} CONFIG.Write_Width_B {32} CONFIG.Read_Width_B {32} CONFIG.Use_RSTA_Pin {true}] [get_ips data_ram]
+generate_target {instantiation_template} [get_files c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/data_ram/data_ram.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/data_ram/data_ram.xci]
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/data_ram/data_ram.xci]
+launch_run -jobs 4 data_ram_synth_1
+current_project Project_III
+remove_files C:/Users/windows10/Desktop/vivadoWorks/inst_ram/inst_ram.srcs/sources_1/ip/data_ram/data_ram.xci
+remove_files C:/Users/windows10/Desktop/vivadoWorks/inst_ram/inst_ram.srcs/sources_1/ip/instruction_rom/instruction_rom.xci
+add_files -norecurse C:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/instruction_rom/instruction_rom.xci
+update_compile_order -fileset sources_1
+add_files -norecurse C:/Users/windows10/Desktop/vivadoWorks/Mems/Mems.srcs/sources_1/ip/data_ram/data_ram.xci
+update_compile_order -fileset sources_1
+launch_simulation
+source sim_for_top.tcl
+run 1000 ns
+close_sim
+launch_simulation
+source sim_for_top.tcl
+run 1000 ns
+run all
+close_sim
+launch_simulation
+source sim_for_top.tcl
+run 1000 ns
+run 1000 ns
+run 1000 ns
+run 1000 ns
+save_wave_config {C:/Users/windows10/Desktop/vivadoWorks/Project_III/sim_for_top_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/windows10/Desktop/vivadoWorks/Project_III/sim_for_top_behav.wcfg
+set_property xsim.view C:/Users/windows10/Desktop/vivadoWorks/Project_III/sim_for_top_behav.wcfg [get_filesets sim_1]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/windows10/Desktop/vivadoWorks/Project_III/Project_III.srcs/sim_1/new/testbench.v w ]
+add_files -fileset sim_1 C:/Users/windows10/Desktop/vivadoWorks/Project_III/Project_III.srcs/sim_1/new/testbench.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/windows10/Desktop/vivadoWorks/Project_III/sim_for_top_behav.wcfg
+source testbench.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top sim_for_instruction_rom [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/windows10/Desktop/vivadoWorks/Project_III/sim_for_top_behav.wcfg
+source sim_for_instruction_rom.tcl
+close_sim
+close_sim
+close_sim
+close_project

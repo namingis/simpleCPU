@@ -1,0 +1,124 @@
+/*
+
+Vivado v2015.2 (64-bit)
+SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+Process ID: 4356
+
+Current time: 	6/22/20 8:15:10 PM CST
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1463x914
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=SimSun,name=ËÎÌו,style=plain,size=12
+
+Java version: 	1.8.0_25 64-bit
+Java home: 	C:/Xilinx/Vivado/2015.2/tps/win64/jre
+
+User name: 	windows10
+User directory: C:/Users/windows10/Desktop/vivadoWorks/Project_II
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+Vivado preferences path: C:/Users/windows10/AppData/Roaming/Xilinx/Vivado/2015.2/vivado.ini
+Vivado layouts directory: C:/Users/windows10/AppData/Roaming/Xilinx/Vivado/2015.2/layouts/application
+
+GUI allocated memory:	190 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 473 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// cp:P (cl:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\windows10\Desktop\vivadoWorks\Project_II\Project_II.xpr. Version: Vivado v2015.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// [GUI Memory]: 54 MB (+54656kb) [00:00:06]
+// [Engine Memory]: 383 MB (+250182kb) [00:00:06]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 413 MB (+10963kb) [00:00:08]
+// [Engine Memory]: 449 MB (+15991kb) [00:00:09]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'. 
+// [Engine Memory]: 473 MB (+2509kb) [00:00:12]
+// HMemoryUtils.trashcanNow. Engine heap size: 475 MB. GUI used memory: 35 MB. Current time: 6/22/20 8:15:10 PM CST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Project_II; location: C:/Users/windows10/Desktop/vivadoWorks/Project_II; part: xc7a100tcsg324-3
+// Tcl Message: open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 732.270 ; gain = 177.391 
+dismissDialog("Open Project"); // cp:P (cl:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [GUI Memory]: 61 MB (+3655kb) [00:00:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 496 MB. GUI used memory: 37 MB. Current time: 6/22/20 8:15:32 PM CST
+// [GUI Memory]: 65 MB (+1743kb) [00:00:37]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v)]", 5, true); // A:k (H:JPanel, cl:JFrame) - Node
+// [Engine Memory]: 503 MB (+6269kb) [00:00:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v)]", 5, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+// [GUI Memory]: 71 MB (+2818kb) [00:00:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), display - display (display.v)]", 8, true); // A:k (H:JPanel, cl:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), display - display (display.v)]", 8, true, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click - Node
+selectCodeEditor("display.v", 110, 436); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "display.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "display.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller.v", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+selectCodeEditor("controller.v", 194, 66); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("controller.v", 3, 253); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "controller.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 140 seconds
+selectCodeEditor("controller.v", 238, 154); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "display.v", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cl:JFrame)
+// [GUI Memory]: 76 MB (+1239kb) [00:03:26]
+// [GUI Memory]: 81 MB (+1486kb) [00:03:26]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v), u1 - maindec (maindec.v)]", 6, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v), u1 - maindec (maindec.v)]", 6, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("maindec.v", 83, 429); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("maindec.v", 78, 406); // bj:J (JPanel:JComponent, cl:JFrame)
+selectCodeEditor("maindec.v", 73, 414); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "maindec.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("maindec.v", 235, 213); // bj:J (JPanel:JComponent, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v), u2 - aludec (aludec.v)]", 7, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), controller - controller (controller.v), u2 - aludec (aludec.v)]", 7, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+selectCodeEditor("aludec.v", 14, 188); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "aludec.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "aludec.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 168 seconds
+selectCodeEditor("aludec.v", 337, 234); // bj:J (JPanel:JComponent, cl:JFrame)
+// [GUI Memory]: 86 MB (+826kb) [00:15:05]
+// Elapsed time: 1173 seconds
+selectCodeEditor("aludec.v", 264, 221); // bj:J (JPanel:JComponent, cl:JFrame)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pc - pc (pc.v)]", 3, false); // A:k (H:JPanel, cl:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), pc - pc (pc.v)]", 3, false, false, false, false, false, true); // A:k (H:JPanel, cl:JFrame) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("pc.v", 91, 406); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "pc.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+typeControlKey((HResource) null, "pc.v", 'c'); // bj:J (JPanel:JComponent, cl:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 515 MB. GUI used memory: 61 MB. Current time: 6/22/20 8:45:37 PM CST

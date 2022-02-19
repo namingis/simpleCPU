@@ -1,0 +1,488 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Jun 22 14:57:01 2020
+# Process ID: 7888
+# Log file: C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/impl_1/top.vdi
+# Journal file: C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/instruction_rom_synth_1/instruction_rom.dcp' for cell 'instruction_rom'
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/windows10/Documents/Tencent Files/2937572301/FileRecv/2018级实验/实验1/constr/constr.xdc]
+Finished Parsing XDC File [C:/Users/windows10/Documents/Tencent Files/2937572301/FileRecv/2018级实验/实验1/constr/constr.xdc]
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/instruction_rom_synth_1/instruction_rom.dcp'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 477.145 ; gain = 1.879
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: f26828c8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 937.270 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-10] Eliminated 0 cells.
+Phase 2 Constant Propagation | Checksum: f26828c8
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 937.270 ; gain = 0.000
+
+Phase 3 Sweep
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[10].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[11].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[12].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[13].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[14].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[15].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[16].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[17].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[18].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[19].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[1].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[20].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[21].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[22].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[23].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[24].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[25].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[26].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[27].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[28].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[29].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[2].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[30].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[31].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[3].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[4].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[5].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[6].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[7].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[8].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/dina[9].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/wea[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[10].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[11].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[12].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[13].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[14].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[15].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[16].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[17].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[18].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[19].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[1].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[20].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[21].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[22].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[23].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[24].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[25].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[26].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[27].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[28].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[29].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[2].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[30].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[31].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[3].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[4].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[5].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[6].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[7].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[8].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/dina[9].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/wea[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[10].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[11].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[12].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[13].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[14].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[15].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[16].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[17].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[18].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[19].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[1].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[20].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[21].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[22].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[23].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[24].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[25].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[26].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[27].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[28].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[29].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[2].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[30].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[31].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[3].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[4].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[5].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[6].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[7].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[8].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/dina[9].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/wea[0].
+WARNING: [Opt 31-6] Deleting driverless net: instruction_rom/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/dina[0].
+INFO: [Common 17-14] Message 'Opt 31-6' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Opt 31-12] Eliminated 44 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2 unconnected cells.
+Phase 3 Sweep | Checksum: 179d6844d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 937.270 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 937.270 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 179d6844d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 937.270 ; gain = 0.000
+Implement Debug Cores | Checksum: 24b000a77
+Logic Optimization | Checksum: 24b000a77
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 3.13 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 1 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 2
+Ending PowerOpt Patch Enables Task | Checksum: 179d6844d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 954.297 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 179d6844d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.312 . Memory (MB): peak = 954.297 ; gain = 17.027
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 954.297 ; gain = 480.492
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 954.297 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/impl_1/top_drc_opted.rpt.
+INFO: [#UNDEF] Cannot write hardware definition file as there are no IPI block design hardware handoff files present
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Runtime Estimator
+Phase 1 Placer Runtime Estimator | Checksum: 1555f7994
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 954.297 ; gain = 0.000
+
+Phase 2 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 954.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 954.297 ; gain = 0.000
+
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 2.1.1 Pre-Place Cells
+Phase 2.1.1 Pre-Place Cells | Checksum: b8e30e34
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 954.297 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 2.1.2 IO & Clk Clean Up
+Phase 2.1.2 IO & Clk Clean Up | Checksum: b8e30e34
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 2.1.3 Implementation Feasibility check On IDelay
+Phase 2.1.3 Implementation Feasibility check On IDelay | Checksum: b8e30e34
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 2.1.4 Commit IO Placement
+Phase 2.1.4 Commit IO Placement | Checksum: 7a28d25a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 2.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 168efb5bb
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 2.2 Build Placer Netlist Model
+
+Phase 2.2.1 Place Init Design
+Phase 2.2.1 Place Init Design | Checksum: 22270fda5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 2.2 Build Placer Netlist Model | Checksum: 22270fda5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 2.3 Constrain Clocks/Macros
+
+Phase 2.3.1 Constrain Global/Regional Clocks
+Phase 2.3.1 Constrain Global/Regional Clocks | Checksum: 22270fda5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 2.3 Constrain Clocks/Macros | Checksum: 22270fda5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 2 Placer Initialization | Checksum: 22270fda5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 3 Global Placement
+Phase 3 Global Placement | Checksum: 21eae0c4e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4 Detail Placement
+
+Phase 4.1 Commit Multi Column Macros
+Phase 4.1 Commit Multi Column Macros | Checksum: 21eae0c4e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.2 Commit Most Macros & LUTRAMs
+Phase 4.2 Commit Most Macros & LUTRAMs | Checksum: 19a094f35
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.3 Area Swap Optimization
+Phase 4.3 Area Swap Optimization | Checksum: 201924735
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.4 Small Shape Detail Placement
+
+Phase 4.4.1 Commit Small Macros & Core Logic
+
+Phase 4.4.1.1 Commit Slice Clusters
+Phase 4.4.1.1 Commit Slice Clusters | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 4.4.1 Commit Small Macros & Core Logic | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns
+Phase 4.4.2 Clock Restriction Legalization for Leaf Columns | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins
+Phase 4.4.3 Clock Restriction Legalization for Non-Clock Pins | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 4.4 Small Shape Detail Placement | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 4.5 Re-assign LUT pins
+Phase 4.5 Re-assign LUT pins | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 4 Detail Placement | Checksum: 1c49112e3
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5 Post Placement Optimization and Clean-Up
+
+Phase 5.1 PCOPT Shape updates
+Phase 5.1 PCOPT Shape updates | Checksum: 9b7ef7db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5.2 Post Commit Optimization
+Phase 5.2 Post Commit Optimization | Checksum: 9b7ef7db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5.3 Sweep Clock Roots: Post-Placement
+Phase 5.3 Sweep Clock Roots: Post-Placement | Checksum: 9b7ef7db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5.4 Post Placement Cleanup
+Phase 5.4 Post Placement Cleanup | Checksum: 9b7ef7db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5.5 Placer Reporting
+Phase 5.5 Placer Reporting | Checksum: 9b7ef7db
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+
+Phase 5.6 Final Placement Cleanup
+Phase 5.6 Final Placement Cleanup | Checksum: 5c8f976f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+Phase 5 Post Placement Optimization and Clean-Up | Checksum: 5c8f976f
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+Ending Placer Task | Checksum: 4b3770c7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 957.234 ; gain = 2.938
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 957.234 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 957.234 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 957.234 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 957.234 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: f8a9b2a8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1074.066 ; gain = 116.832
+
+Phase 2 Router Initialization
+INFO: [Route 35-64] No timing constraints were detected. The router will operate in resource-optimization mode.
+
+Phase 2.1 Pre Route Cleanup
+Phase 2.1 Pre Route Cleanup | Checksum: f8a9b2a8
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:37 . Memory (MB): peak = 1078.895 ; gain = 121.660
+ Number of Nodes with overlaps = 0
+Phase 2 Router Initialization | Checksum: d2ed0c3c
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 11134331a
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+Phase 4.1 Global Iteration 0 | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+Phase 4 Rip-up And Reroute | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 5 Delay and Skew Optimization
+Phase 5 Delay and Skew Optimization | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 6 Post Hold Fix
+Phase 6 Post Hold Fix | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.032946 %
+  Global Horizontal Routing Utilization  = 0.0191105 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 21.6216%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 16.2162%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 13.2353%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 19.1176%, No Congested Regions.
+Phase 7 Route finalize | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 1245c9e56
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 16bb1b067
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:38 . Memory (MB): peak = 1090.309 ; gain = 133.074
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:39 . Memory (MB): peak = 1090.309 ; gain = 133.074
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1090.309 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/impl_1/top_drc_routed.rpt.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+WARNING: [Power 33-232] No user defined clocks were found in the design!
+Resolution: Please specify clocks using create_clock/create_generated_clock for sequential elements. For pure combinatorial circuits, please specify a virtual clock, otherwise the vectorless estimation might be inaccurate
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 22 14:58:06 2020...

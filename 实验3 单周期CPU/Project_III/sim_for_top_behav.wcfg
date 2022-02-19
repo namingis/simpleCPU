@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_for_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim_for_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/ALUOut" type="array">
+      <obj_property name="ElementShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOut[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_instr" type="array">
+      <obj_property name="ElementShortName">test_instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_instr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_ram_read_data" type="array">
+      <obj_property name="ElementShortName">test_ram_read_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_ram_read_data[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_address" type="array">
+      <obj_property name="ElementShortName">test_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_memtoreg" type="logic">
+      <obj_property name="ElementShortName">test_memtoreg</obj_property>
+      <obj_property name="ObjectShortName">test_memtoreg</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_alusrc" type="logic">
+      <obj_property name="ElementShortName">test_alusrc</obj_property>
+      <obj_property name="ObjectShortName">test_alusrc</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_regdst" type="logic">
+      <obj_property name="ElementShortName">test_regdst</obj_property>
+      <obj_property name="ObjectShortName">test_regdst</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_regwrite" type="logic">
+      <obj_property name="ElementShortName">test_regwrite</obj_property>
+      <obj_property name="ObjectShortName">test_regwrite</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_jump" type="logic">
+      <obj_property name="ElementShortName">test_jump</obj_property>
+      <obj_property name="ObjectShortName">test_jump</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_pcsrc" type="logic">
+      <obj_property name="ElementShortName">test_pcsrc</obj_property>
+      <obj_property name="ObjectShortName">test_pcsrc</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_zero" type="logic">
+      <obj_property name="ElementShortName">test_zero</obj_property>
+      <obj_property name="ObjectShortName">test_zero</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_alucontrol" type="array">
+      <obj_property name="ElementShortName">test_alucontrol[2:0]</obj_property>
+      <obj_property name="ObjectShortName">test_alucontrol[2:0]</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_jump_address" type="array">
+      <obj_property name="ElementShortName">test_jump_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_jump_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_plus_4_address" type="array">
+      <obj_property name="ElementShortName">test_plus_4_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_plus_4_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_branch_address" type="array">
+      <obj_property name="ElementShortName">test_branch_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_branch_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_shifted_address" type="array">
+      <obj_property name="ElementShortName">test_shifted_address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_shifted_address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_immea" type="array">
+      <obj_property name="ElementShortName">test_immea[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_immea[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="/sim_for_top/test_reg_out_1" type="array">
+      <obj_property name="ElementShortName">test_reg_out_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">test_reg_out_1[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

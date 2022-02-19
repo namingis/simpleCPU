@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Jun 25 21:46:32 2020
+# Process ID: 13896
+# Log file: C:/Users/windows10/Desktop/vivadoWorks/memories/memories.runs/instruction_rom_synth_1/instruction_rom.vds
+# Journal file: C:/Users/windows10/Desktop/vivadoWorks/memories/memories.runs/instruction_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source instruction_rom.tcl -notrace

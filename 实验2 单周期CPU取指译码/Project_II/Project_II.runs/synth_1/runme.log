@@ -1,0 +1,340 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2015.2/data/ip'.
+Command: synth_design -top top -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 271.660 ; gain = 94.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'pc_adder' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/pc_adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pc_adder' (1#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/pc_adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'pc' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-256] done synthesizing module 'pc' (2#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/pc.v:23]
+INFO: [Synth 8-638] synthesizing module 'instruction_rom' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/synth_1/.Xil/Vivado-9488-DESKTOP-AFCP9J8/realtime/instruction_rom_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'instruction_rom' (3#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/synth_1/.Xil/Vivado-9488-DESKTOP-AFCP9J8/realtime/instruction_rom_stub.v:7]
+WARNING: [Synth 8-350] instance 'instruction_rom' of module 'instruction_rom' requires 5 connections, but only 4 given [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/top.v:53]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'maindec' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/maindec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'maindec' (4#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/maindec.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'sigs' does not match port width (9) of module 'maindec' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/controller.v:38]
+INFO: [Synth 8-638] synthesizing module 'aludec' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/aludec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'aludec' (5#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/aludec.v:23]
+INFO: [Synth 8-256] done synthesizing module 'controller' (6#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/controller.v:23]
+INFO: [Synth 8-638] synthesizing module 'display' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-638] synthesizing module 'seg7' [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/seg7.v:22]
+INFO: [Synth 8-226] default block is never used [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/seg7.v:28]
+INFO: [Synth 8-256] done synthesizing module 'seg7' (7#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/seg7.v:22]
+INFO: [Synth 8-256] done synthesizing module 'display' (8#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/display.v:22]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.srcs/sources_1/new/top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 306.836 ; gain = 129.672
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 306.836 ; gain = 129.672
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/windows10/Documents/Tencent Files/2937572301/FileRecv/2018级实验/实验1/constr/constr.xdc]
+Finished Parsing XDC File [C:/Users/windows10/Documents/Tencent Files/2937572301/FileRecv/2018级实验/实验1/constr/constr.xdc]
+Parsing XDC File [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/windows10/Desktop/vivadoWorks/Project_II/Project_II.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 607.070 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for instruction_rom. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "signals" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   7 Input      9 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module pc_adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module maindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      9 Bit        Muxes := 1     
+Module aludec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+Module seg7 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+Module display 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "controller/u1/signals" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "clk0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 607.070 ; gain = 429.906
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 607.070 ; gain = 429.906
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\pc/address_reg[0] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module instruction_rom has unconnected pin rsta
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |instruction_rom |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |instruction_rom |     1|
+|2     |BUFG            |     2|
+|3     |CARRY4          |    22|
+|4     |LUT1            |    84|
+|5     |LUT2            |     7|
+|6     |LUT3            |     1|
+|7     |LUT4            |    10|
+|8     |LUT6            |    22|
+|9     |MUXF7           |     4|
+|10    |FDCE            |    21|
+|11    |FDRE            |    68|
+|12    |FDSE            |     8|
+|13    |IBUF            |     2|
+|14    |OBUF            |    25|
++------+----------------+------+
+
+Report Instance Areas: 
++------+-----------+---------+------+
+|      |Instance   |Module   |Cells |
++------+-----------+---------+------+
+|1     |top        |         |   308|
+|2     |  display  |display  |    84|
+|3     |    U4     |seg7     |     7|
+|4     |  pc       |pc       |    61|
+|5     |  pc_adder |pc_adder |     9|
++------+-----------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 607.070 ; gain = 77.492
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 607.070 ; gain = 429.906
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 607.070 ; gain = 383.285
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 607.070 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 25 22:06:36 2020...

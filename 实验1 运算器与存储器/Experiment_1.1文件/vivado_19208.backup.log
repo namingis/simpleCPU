@@ -1,0 +1,133 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 25 17:38:15 2020
+# Process ID: 19208
+# Current directory: D:/ComputerArchitecture/Experiment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14712 D:\ComputerArchitecture\Experiment_1\Experiment_1.xpr
+# Log file: D:/ComputerArchitecture/Experiment_1/vivado.log
+# Journal file: D:/ComputerArchitecture/Experiment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ComputerArchitecture/Experiment_1/Experiment_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivadocorrelation/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 709.734 ; gain = 96.520
+update_compile_order -fileset sources_1
+eclose [ open D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/display.v w ]
+add_files D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/display.v
+update_compile_order -fileset sources_1
+close [ open D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/seg7.v w ]
+add_files D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/seg7.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/constrs_1
+file mkdir D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/constrs_1/new
+close [ open D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/constrs_1/new/ALUConstrain.xdc w ]
+add_files -fileset constrs_1 D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/constrs_1/new/ALUConstrain.xdc
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/ComputerArchitecture/Experiment_1/Experiment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'alutest' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/ComputerArchitecture/Experiment_1/Experiment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alutest_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module display
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/myALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module myALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/seg7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seg7
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sim_1/new/alutest.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alutest
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/ComputerArchitecture/Experiment_1/Experiment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivadocorrelation/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 13a3621660f248dba8f50c6b1d72832d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot alutest_behav xil_defaultlib.alutest xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 1 for port 'clk' [D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sim_1/new/alutest.v:49]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 4 for port 'din' [D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sources_1/new/display.v:79]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seg7
+Compiling module xil_defaultlib.display
+Compiling module xil_defaultlib.myALU
+Compiling module xil_defaultlib.alutest
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot alutest_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 747.555 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/ComputerArchitecture/Experiment_1/Experiment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alutest_behav -key {Behavioral:sim_1:Functional:alutest} -tclbatch {alutest.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source alutest.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alutest_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 781.500 ; gain = 33.945
+export_ip_user_files -of_objects  [get_files D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sim_1/new/alutest.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sim_1/new/alutest.v
+file delete -force D:/ComputerArchitecture/Experiment_1/Experiment_1.srcs/sim_1/new/alutest.v
+launch_runs synth_1 -jobs 4
+[Mon May 25 18:17:15 2020] Launched synth_1...
+Run output will be captured here: D:/ComputerArchitecture/Experiment_1/Experiment_1.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Mon May 25 18:18:00 2020] Launched impl_1...
+Run output will be captured here: D:/ComputerArchitecture/Experiment_1/Experiment_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 782.484 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292696310A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon May 25 18:21:48 2020] Launched impl_1...
+Run output will be captured here: D:/ComputerArchitecture/Experiment_1/Experiment_1.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/ComputerArchitecture/Experiment_1/Experiment_1.runs/impl_1/myALU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292696310A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 25 18:31:20 2020...
